@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>kiem tra nam nhuan</title>
+</head>
+<body>
+<h3> NĂM CẨN KIỂM TRA: <input type="text" id="a"></h3>
+<button onclick="b()"> Kiem tra </button> <h3 style="color: red"></h3>
+<script>
+    function b() {
+        let a = + document.getElementById('a').value;
+        if(a%4==0 && a%100!=0 || a%400==0) {
+            document.write('<h1> Năm '+''+a+' nhuận!'+'</h1>')
+        }
+        else {
+            document.write('<h1> Năm '+''+a+' Không nhuận!'+'</h1>')
+        }
+    }
+</script>
+</body>
+</html>
